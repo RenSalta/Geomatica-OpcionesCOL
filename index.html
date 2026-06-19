@@ -1,0 +1,237 @@
+
+<style>
+h2.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);}
+*{box-sizing:border-box;margin:0;padding:0;}
+.wrap{padding:0.75rem 0 1rem;}
+.tabs{display:flex;gap:0;border-bottom:0.5px solid var(--color-border-tertiary);margin-bottom:1rem;}
+.tab{padding:7px 14px;font-size:12.5px;cursor:pointer;border:0.5px solid transparent;border-bottom:none;border-radius:6px 6px 0 0;color:var(--color-text-secondary);background:transparent;}
+.tab.active{background:var(--color-background-primary);border-color:var(--color-border-tertiary);color:var(--color-text-primary);font-weight:500;position:relative;bottom:-0.5px;}
+.section{display:none;}
+.section.active{display:block;}
+table{width:100%;border-collapse:collapse;font-size:12px;table-layout:fixed;}
+thead tr{background:var(--color-background-secondary);}
+th{text-align:left;padding:8px 9px;font-weight:500;font-size:11px;color:var(--color-text-secondary);border-bottom:0.5px solid var(--color-border-tertiary);vertical-align:bottom;line-height:1.3;}
+td{padding:8px 9px;border-bottom:0.5px solid var(--color-border-tertiary);vertical-align:top;line-height:1.5;color:var(--color-text-primary);font-size:11.5px;}
+tr:last-child td{border-bottom:none;}
+tr:hover td{background:var(--color-background-secondary);}
+.prog{font-weight:500;font-size:12px;line-height:1.3;}
+.uni{font-size:10.5px;color:var(--color-text-secondary);margin-top:3px;}
+.badge{display:inline-block;font-size:10px;padding:2px 6px;border-radius:8px;margin:2px 2px 2px 0;line-height:1.4;}
+.b-sig{background:#E1F5EE;color:#085041;}
+.b-pr{background:#EEEDFE;color:#3C3489;}
+.b-ide{background:#FAECE7;color:#712B13;}
+.b-inf{background:#FAEEDA;color:#633806;}
+.b-inv{background:#EAF3DE;color:#27500A;}
+.b-bd{background:#FBEAF0;color:#72243E;}
+.b-met{background:#E6F1FB;color:#0C447C;}
+.b-otro{background:#F1EFE8;color:#444441;}
+.chip{display:inline-block;font-size:10px;padding:2px 7px;border-radius:8px;line-height:1.4;}
+.chip-pres{background:#E1F5EE;color:#085041;}
+.chip-hib{background:#E6F1FB;color:#0C447C;}
+.star{color:#BA7517;font-size:11px;}
+.costo{font-weight:500;}
+.nd{color:var(--color-text-secondary);font-style:italic;}
+.pill-inv{background:#EAF3DE;color:#27500A;display:inline-block;font-size:10px;padding:1px 6px;border-radius:6px;}
+.pill-prof{background:#E6F1FB;color:#0C447C;display:inline-block;font-size:10px;padding:1px 6px;border-radius:6px;}
+.pill-both{background:#FAEEDA;color:#633806;display:inline-block;font-size:10px;padding:1px 6px;border-radius:6px;}
+.nota{font-size:10.5px;color:var(--color-text-secondary);margin-top:0.75rem;padding-top:0.5rem;border-top:0.5px solid var(--color-border-tertiary);}
+</style>
+
+<div class="wrap">
+<h2 class="sr-only">Comparativa de maestrías en geomática, teledetección y geoinformática en Colombia — generalidades, plan de estudios y diferenciadores</h2>
+
+<div class="tabs">
+  <button class="tab active" onclick="show('general',this)">Generalidades</button>
+  <button class="tab" onclick="show('plan',this)">Plan de estudios</button>
+  <button class="tab" onclick="show('diferencial',this)">Diferenciadores</button>
+</div>
+
+<!-- TAB 1: GENERALIDADES -->
+<div id="general" class="section active">
+<table>
+<thead>
+<tr>
+  <th style="width:22%">Programa</th>
+  <th style="width:9%">Ciudad</th>
+  <th style="width:8%">Créditos</th>
+  <th style="width:8%">Duración</th>
+  <th style="width:10%">Modalidad</th>
+  <th style="width:12%">Costo / semestre</th>
+  <th style="width:10%">Tipo maestría</th>
+  <th style="width:21%">Convenio / Alianza</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="prog">Tecnologías de la Información Geográfica</div><div class="uni">Universidad de Manizales · SNIES 102462</div></td>
+<td>Manizales</td>
+<td>52</td>
+<td>5 semestres</td>
+<td><span class="chip chip-pres">Presencial</span></td>
+<td class="costo">$10.309.000</td>
+<td><span class="pill-inv">Investigación</span></td>
+<td>Sin convenio externo</td>
+</tr>
+<tr>
+<td><div class="prog">Geomática</div><div class="uni">Univ. Nacional de Colombia · Sede Bogotá</div></td>
+<td>Bogotá</td>
+<td>~52</td>
+<td>4 sem. (típico)</td>
+<td><span class="chip chip-pres">Presencial</span></td>
+<td class="nd">N/D (pública)</td>
+<td><span class="pill-inv">Investigación</span></td>
+<td>Fac. Ciencias Agrarias – enfoque agro-territorial</td>
+</tr>
+<tr>
+<td><div class="prog">Geoinformática</div><div class="uni">Univ. de San Buenaventura Medellín · SNIES 104279</div></td>
+<td>Medellín</td>
+<td>49</td>
+<td>4 semestres</td>
+<td><span class="chip chip-pres">Presencial</span></td>
+<td class="costo">$11.965.300</td>
+<td><span class="pill-inv">Investigación</span></td>
+<td>Sin convenio externo</td>
+</tr>
+<tr>
+<td><div class="prog">Teledetección</div><div class="uni">Univ. Católica de Manizales · SNIES 91324</div></td>
+<td>Manizales</td>
+<td>36</td>
+<td>3 semestres</td>
+<td><span class="chip chip-pres">Presencial</span> <span style="font-size:10px;color:var(--color-text-secondary)">+ TIC</span></td>
+<td class="nd">N/D</td>
+<td><span class="pill-inv">Investigación</span></td>
+<td>Sin convenio externo</td>
+</tr>
+<tr>
+<td><div class="prog">Gestión de la Información y Tecnologías Geoespaciales</div><div class="uni">Univ. Sergio Arboleda · SNIES 102309</div></td>
+<td>Bogotá</td>
+<td>52</td>
+<td>4 semestres</td>
+<td><span class="chip chip-hib">Pres. + virtual</span></td>
+<td class="costo">~$9.154.050 <span style="font-size:10px">(~$36.6M total)</span></td>
+<td><span class="pill-both">Investig. o Prof.</span></td>
+<td><strong>IGAC</strong> — Instituto Geográfico Agustín Codazzi</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- TAB 2: PLAN DE ESTUDIOS -->
+<div id="plan" class="section">
+<table>
+<thead>
+<tr>
+  <th style="width:20%">Programa</th>
+  <th style="width:48%">Asignaturas por área</th>
+  <th style="width:17%">Trabajo de grado</th>
+  <th style="width:15%">Software / plataformas mencionadas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="prog">TIG – U. Manizales</div></td>
+<td>
+  <span class="badge b-sig">Introducción a los SIG</span><span class="badge b-sig">Análisis espacial y geoestadística</span><span class="badge b-sig">Cartografía y catastro</span><span class="badge b-sig">Aplicaciones SIG</span><span class="badge b-ide">Infraestructura de datos espaciales</span><span class="badge b-pr">Teledetección</span><span class="badge b-pr">Procesamiento digital de imágenes</span><span class="badge b-bd">BD relacionales y espaciales</span><span class="badge b-inf">Desarrollo de software I y II</span><span class="badge b-inf">Servidores SIG y web sites</span><span class="badge b-inv">Talleres I–III + Proyecto</span><span class="badge b-otro">Electivas I–III</span>
+</td>
+<td>Proyecto de investigación + pasantía académica</td>
+<td class="nd">No especificado</td>
+</tr>
+<tr>
+<td><div class="prog">Geomática – UNAL</div></td>
+<td>
+  <span class="badge b-sig">Geomática general</span><span class="badge b-sig">Análisis y modelamiento espacial</span><span class="badge b-sig">Geoestadística</span><span class="badge b-pr">Percepción remota</span><span class="badge b-pr">Percepción remota avanzada</span><span class="badge b-pr">Radar y LiDAR</span><span class="badge b-met">Fundamentos meteorología y climatología</span><span class="badge b-met">Agroclimatología y cambio climático</span><span class="badge b-bd">Bases de datos espaciales</span><span class="badge b-inf">Programación SIG</span><span class="badge b-ide">Servicios web geográficos</span><span class="badge b-inv">Seminarios de investigación I y II</span>
+</td>
+<td>Tesis de maestría (modalidad investigación)</td>
+<td>R, QGIS, ArcGIS, SAGA, GRASS, Google Earth Engine, ENVI, ERDAS, Python</td>
+</tr>
+<tr>
+<td><div class="prog">Geoinformática – USB Medellín</div></td>
+<td>
+  <span class="badge b-inf">Programación para ciencia de geodatos</span><span class="badge b-ide">Adquisición de geodatos I y II</span><span class="badge b-inv">Metodología de investigación</span><span class="badge b-sig">Modelado y simulación espacial I y II</span><span class="badge b-ide">Infraestructura de datos espaciales</span><span class="badge b-sig">Geoanalítica y BigData</span><span class="badge b-pr">Visualización de geodatos</span><span class="badge b-otro">Bioética</span><span class="badge b-otro">Optativas I y II</span><span class="badge b-inv">Propuesta y proyecto de grado</span>
+</td>
+<td>Proyecto de grado (investigación aplicada)</td>
+<td>Plataformas SIG + Big Data geoespacial + Geo IA</td>
+</tr>
+<tr>
+<td><div class="prog">Teledetección – UCM</div></td>
+<td>
+  <span class="badge b-pr">Fundamentos de teledetección</span><span class="badge b-pr">Interpretación de imágenes</span><span class="badge b-pr">Procesamiento de imágenes e IA</span><span class="badge b-pr">Fotogrametría</span><span class="badge b-sig">Geodesia y cartografía</span><span class="badge b-sig">Estadística espacial</span><span class="badge b-sig">SIG</span><span class="badge b-ide">Infraestructura de datos espaciales</span><span class="badge b-met">Cambio climático y gestión del riesgo</span><span class="badge b-otro">Ordenamiento territorial</span><span class="badge b-otro">Derecho espacial y propiedad intelectual</span><span class="badge b-inv">Investigación I–III</span><span class="badge b-otro">Electiva</span>
+</td>
+<td>Proyecto de investigación (3 semestres)</td>
+<td class="nd">No especificado</td>
+</tr>
+<tr>
+<td><div class="prog">GITG – U. Sergio Arboleda + IGAC</div></td>
+<td>
+  <span class="badge b-sig">Estructura de información geográfica y SIG</span><span class="badge b-pr">Fundamentos de percepción remota</span><span class="badge b-ide">Infraestructura de datos espaciales</span><span class="badge b-inf">Fundamentos de informática</span><span class="badge b-otro">Ética, negociación y gestión de proyectos</span><span class="badge b-sig">Análisis y modelamiento espacial</span><span class="badge b-pr">Proceso matemático y digital de imágenes</span><span class="badge b-ide">Estándares de información geográfica</span><span class="badge b-sig">Técnicas de modelación y simulación</span><span class="badge b-pr">Técnicas avanzadas de percepción remota</span><span class="badge b-ide">Gestión de información geográfica</span><span class="badge b-inf">Geoservicios y geoportales</span><span class="badge b-inv">Seminarios de investigación I y II</span><span class="badge b-inv">Proyecto en SIG / PR / IDE (13 cr.)</span>
+</td>
+<td>Proyecto aplicado o científico en SIG, PR o IDE (13 créditos)</td>
+<td class="nd">No especificado</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- TAB 3: DIFERENCIADORES -->
+<div id="diferencial" class="section">
+<table>
+<thead>
+<tr>
+  <th style="width:20%">Programa</th>
+  <th style="width:22%">Fortaleza principal</th>
+  <th style="width:22%">Asignaturas únicas</th>
+  <th style="width:18%">Perfil de egresado</th>
+  <th style="width:18%">Para quién es ideal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><div class="prog">TIG – U. Manizales</div></td>
+<td>Equilibrio entre SIG, sensores remotos y <strong>desarrollo de software</strong> geoespacial. Componente de pasantía académica.</td>
+<td>Desarrollo de software I y II · Servidores SIG y web sites</td>
+<td>Investigador / desarrollador de soluciones geoespaciales</td>
+<td>Quienes quieren combinar geomática con ingeniería de software</td>
+</tr>
+<tr>
+<td><div class="prog">Geomática – UNAL</div></td>
+<td>Único programa con <strong>meteorología, agroclimatología y radar/LiDAR</strong>. Adscrito a Ciencias Agrarias.</td>
+<td>Fundamentos de meteorología · Agroclimatología y cambio climático · Radar and LiDAR · Geoestadística</td>
+<td>Investigador en geomática con enfoque ambiental/agrícola</td>
+<td>Profesionales del sector ambiental, agropecuario o climático</td>
+</tr>
+<tr>
+<td><div class="prog">Geoinformática – USB Medellín</div></td>
+<td>Mayor énfasis en <strong>Big Data geoespacial, Geo IA</strong> y geoanalítica. Sello humanista franciscano + sostenibilidad.</td>
+<td>Geoanalítica y BigData · Visualización de geodatos · Bioética</td>
+<td>Científico de geodatos / líder de proyectos de innovación territorial</td>
+<td>Ingenieros y científicos de datos que quieren aplicar IA geoespacial</td>
+</tr>
+<tr>
+<td><div class="prog">Teledetección – UCM</div></td>
+<td>El <strong>más corto</strong> (36 cr., 3 sem.) y el único con <strong>fotogrametría, derecho espacial</strong> e IA aplicada a imágenes de forma explícita.</td>
+<td>Fotogrametría · Procesamiento de imágenes e IA · Derecho espacial y propiedad intelectual · Cambio climático y riesgo</td>
+<td>Especialista en teledetección e interpretación de imágenes</td>
+<td>Quien quiere formación sólida en sensores remotos en el menor tiempo posible</td>
+</tr>
+<tr>
+<td><div class="prog">GITG – U. Sergio Arboleda + IGAC</div></td>
+<td><strong>Convenio con el IGAC</strong> (máxima entidad cartográfica del país). Opción investigación o profundización. Complementación virtual entre sesiones.</td>
+<td>Estándares de información geográfica · Ética, negociación y gestión de proyectos · Modalidad presencial quincenal</td>
+<td>Gestor/especialista en información geoespacial para sector público o privado</td>
+<td>Profesionales en ejercicio que necesitan flexibilidad horaria y conexión con entidades estatales</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p class="nota">* N/D = no disponible públicamente. Costo U. Sergio Arboleda estimado dividiendo el total publicado ($36.616.200) entre 4 semestres. UNAL aplica tarifas diferenciales por estratificación (universidad pública). USB Medellín: $11.965.300/sem. según web 2026. U. Manizales: $10.309.000/sem. según web oficial.</p>
+</div>
+
+<script>
+function show(id, btn){
+  document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+}
+</script>
